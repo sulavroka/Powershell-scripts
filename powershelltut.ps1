@@ -33,3 +33,5 @@ $hello = "wow"
 #here string basically subexpression like in haskell  2+2 "2 + 2" $("2+2") 
 #putting arugments on the paratmeters just like pipes
 Get-service -name bits -ComputerName (Get-Content c:\computers.txt)
+
+# Ctrl + c to break the command 
