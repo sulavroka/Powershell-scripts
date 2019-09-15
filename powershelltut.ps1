@@ -35,3 +35,11 @@ $hello = "wow"
 Get-service -name bits -ComputerName (Get-Content c:\computers.txt)
 
 # Ctrl + c to break the command 
+PowerShell will actually treat any comma-separated list as an array:
+
+"server1","server2"
+So the @ is optional in those cases. However, for associative arrays, the @ is required:
+
+@{"Key"="Value";"Key2"="Value2"}
+Officially, @ is the "array operator."
+
