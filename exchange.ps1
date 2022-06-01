@@ -5,5 +5,5 @@ Set-MailboxAutoReplyConfiguration -Identity blha@blah.uk -AutoReplyState Enabled
 Get-Mailbox | Get-MailboxPermission -User papajones | select-object -property *
 
 
-Set-RemoteMailbox User -EmailAddresses PrimarySMTPaddress  -EmailAddressPolicyEnabled $false
+Set-RemoteMailbox -Identity Apqueries -PrimarySMTPaddress APQueries@enotriacoe.com -EmailAddressPolicyEnabled $false
 
